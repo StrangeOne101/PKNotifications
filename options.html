@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="options.js" type="text/javascript"></script>
+<style>
+body {
+	margin: 40px 40px 40px 40px;
+	background-color: #F9F9F9;
+}
+h2 {
+	font-size: 18px;
+	text-align: center;
+	margin-top: -30px;
+	margin-bottom: 18px;
+}
+h3 {
+	font-size: 14px;
+	margin-bottom: 0px;
+}
+p {
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+input.radio {
+	display: none !important;
+}
+.radio:checked + img {
+	font-family: "Bauhaus 93";
+	border-color: #808080;
+	border-width: 1px;
+	background-color: #DDDDDD;
+}
+.label {
+	cursor: pointer;
+	margin-right: 8px;
+	display: inline-block;
+	text-align: center;
+}
+img {
+	border-color: #D0D0D0;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	display: inline-block;
+	background-color: #F2F2F2;
+	width: 120px;
+	height: 120px;
+}
+button {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+input.disabled {
+	background-image: linear-gradient(rgb(241, 241, 241), rgb(241, 241, 241) 38%, rgb(230, 230, 230));
+    box-shadow: rgba(80, 80, 80, 0.0784314) 0px 1px 0px, rgba(255, 255, 255, 0.74902) 0px 1px 2px inset;
+    color: rgb(170, 170, 170);
+    border-color: rgba(80, 80, 80, 0.2); 
+}
+</style>
+</head>
+<body>
+<h2>ProjectKorra Notifier Options</h2>
+<h3>Icon</h3><p>Select an icon for ProjectKorra Notifier to use. </p>
+<div><label for="korra" class="label"><input type="radio" name="icon" id="korra" class="radio" checked="true">
+        <img src="img/Korra/icon512.png" class="img" alt="PK Notifier" /><br>PK Notifier</label>
+
+    <label for="core" class="label"><input type="radio" name="icon" id="core" class="radio">
+        <img src="img/Core/icon512.png" class="img" alt="ProjectKorra (Core)" /><br>ProjectKorra Core</label>
+</div>
+<br>
+<h3>Settings</h3>
+Run in background: <input type="button" value="YES" id="toggleBackground"><br>
+Custom Theme: <input type="button" value="Configure" id="toggleCustomTheme"><br>
+<span id="openModMenu" style="display: none">Anti-spam: <input type="button" value="CONFIGURE" id="openModMenuButton"><br></span>
+<h3>Secret Settings</h3> 
+<ul id="secretsettings">
+	<li>(None)</li>
+</ul>
+<input type="button" value="Enter Code" id="expandCode">
+<span id="hiddencodebox"></span>
+<h3>About</h3>
+This extension was developed by StrangeOne101. This is not an official ProjectKorra extension and should not be affiliated 
+with ProjectKorra or the ProjectKorra plugin. All problems should be reported <a href="https://projectkorra.com/forum/threads/pk-notifications.3736/">in this thread</a>
+ as any support will not be provided anywhere else but there!<br><br>A changelog of the extension can be found <a href="changelog.html#options">here</a> and provides a
+list of changes in the extension!
+<br><br>
+<center><strong><button type="button" id="save">Exit</button></strong></center>
+</body>
+</html>
